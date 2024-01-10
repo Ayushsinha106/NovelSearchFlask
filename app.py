@@ -70,12 +70,9 @@ def post_data():
 
 @app.route('/api', methods=['GET'])
 def get_data():
-    # Process the data (you can replace this with your own logic)
     data = {'message': 'Hello, this is a GET request'}
 
-    # Return a JSON response
     return jsonify(data)
 
 if __name__ == '__main__':
     app.run(debug=False)
-    # app.run() for production
